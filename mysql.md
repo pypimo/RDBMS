@@ -22,3 +22,7 @@ INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 SELECT LENGTH(CustomerName) AS LengthOfName
 FROM Customers;
 ```
+eg: col-> content and its length should be less than 15
+```mysql
+SELECT tweet_id FROM Tweets WHERE length(content)>15
+```
