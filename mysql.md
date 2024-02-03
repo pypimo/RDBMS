@@ -24,5 +24,5 @@ FROM Customers;
 ```
 eg: col-> content and its length should be less than 15
 ```mysql
-SELECT tweet_id FROM Tweets WHERE length(content)>15
+SELECT tweet_id FROM Tweets WHERE LENGTH(content)>15
 ```
