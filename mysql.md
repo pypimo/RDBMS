@@ -26,3 +26,5 @@ eg: col-> content and its length should be less than 15
 ```mysql
 SELECT tweet_id FROM Tweets WHERE LENGTH(content)>15
 ```
+## col present in one table but not in another
+https://explainextended.com/2009/09/18/not-in-vs-not-exists-vs-left-join-is-null-mysql/
