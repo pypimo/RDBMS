@@ -2,7 +2,7 @@
 ```mysql
 SELECT col1, col2 FROM table_name WHERE conditions (ans/or) ORDER BY col_name (default:asc/ desc)
 SELECT DISTINCT -> unique values only
-SLEECT col_name as different_name
+SELECT col_name as different_name
 ```
 
 ## ALTER TABLE
@@ -14,8 +14,8 @@ SLEECT col_name as different_name
 - OUTER -> includes all, left right and common
 ```mysql
 SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+FROM Orders INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
 ```
 ## LENGTH() function
 ```mysql
