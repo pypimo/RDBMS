@@ -6,7 +6,8 @@ SELECT col_name as different_name
 ```
 
 ## ALTER TABLE
-- 
+-
+
 ## JOINS
 - INNER -> common in both
 - LEFT -> includes all from left table and common
@@ -29,9 +30,14 @@ SELECT tweet_id FROM Tweets WHERE LENGTH(content)>15
 ## col present in one table but not in another
 - https://explainextended.com/2009/09/18/not-in-vs-not-exists-vs-left-join-is-null-mysql/
 - and also count such entries
+- https://leetcode.com/submissions/detail/1164825146/
 ```
-SELECT Visits.customer_id, COUNT(*) AS count_no_trans
-FROM Visits LEFT JOIN Transactions
-ON Visits.visit_id=Transactions.visit_id
-WHERE Transactions.visit_id IS NULL
-GROUP BY Visits.customer_id
+SELECT v.customer_id, COUNT(*) AS count_no_trans
+FROM Visits v LEFT JOIN Transactions t
+ON v.visit_id=t.visit_id
+WHERE t.visit_id IS NULL 
+GROUP BY v.customer_id (imp else count(*) just counts all rows)
+```
+# MULTIPLE CALC
+## mutliple queries
+## using join
