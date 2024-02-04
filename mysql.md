@@ -40,5 +40,18 @@ GROUP BY v.customer_id (imp else count(*) just counts all rows)
 ```
 # CALC USING COLS
 https://www.tutorialspoint.com/how-to-calculate-value-from-multiple-columns-in-mysql
-## calc with queries n join
-https://leetcode.com/problems/average-time-of-process-per-machine/discuss/3722056/SQL-or-JOIN-or-Subquery-or-Easy-to-understand
+## calc with multiple queries
+https://leetcode.com/problems/average-time-of-process-per-machine/discuss/3722056/SQL-or-JOIN-or-Subquery-or-Easy-to-understan
+
+https://leetcode.com/problems/average-selling-price/
+```mysql
+# Using multiple queries
+SELECT product_id, IFNULL(ROUND(
+    SUM((SELECT u.units*p.price FROM UnitsSold u WHERE u.product_id=p.product_id AND u.purchase_date BETWEEN p.start_date AND p.end_date))
+    /
+    (SELECT SUM(u.units) FROM UnitsSold u WHERE u.product_id=p.product_id)
+,2),0)
+as average_price 
+FROM Prices p
+GROUP BY product_id
+```
