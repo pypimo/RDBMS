@@ -40,6 +40,5 @@ GROUP BY v.customer_id (imp else count(*) just counts all rows)
 ```
 # CALC USING COLS
 https://www.tutorialspoint.com/how-to-calculate-value-from-multiple-columns-in-mysql
-## mutliple queries
-
-## using join
+## calc with queries n join
+https://leetcode.com/problems/average-time-of-process-per-machine/discuss/3722056/SQL-or-JOIN-or-Subquery-or-Easy-to-understand
