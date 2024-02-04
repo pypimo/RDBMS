@@ -38,6 +38,8 @@ ON v.visit_id=t.visit_id
 WHERE t.visit_id IS NULL 
 GROUP BY v.customer_id (imp else count(*) just counts all rows)
 ```
-# MULTIPLE CALC
+# CALC USING COLS
+https://www.tutorialspoint.com/how-to-calculate-value-from-multiple-columns-in-mysql
 ## mutliple queries
+
 ## using join
