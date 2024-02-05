@@ -7,6 +7,11 @@ SELECT col_name as different_name
 
 ## ALTER TABLE
 -
+## COUNT witth condiiton 
+```mysql
+#use sum with if statememnt
+SUM(if(ccc_news_comments.id = 'approved', 1, 0))
+```
 
 ## JOINS
 - INNER -> common in both
