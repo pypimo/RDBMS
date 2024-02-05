@@ -18,6 +18,8 @@ SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
 FROM Orders INNER JOIN Customers
 ON Orders.CustomerID=Customers.CustomerID;
 ```
+- CROSS JOIN -> includes all values from both tables
+- https://leetcode.com/problems/students-and-examinations/
 ## LENGTH() function
 ```mysql
 SELECT LENGTH(CustomerName) AS LengthOfName
