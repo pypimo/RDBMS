@@ -14,6 +14,7 @@ SUM(if(ccc_news_comments.id = 'approved', 1, 0))
 ```
 
 ## JOINS
+https://stackoverflow.com/questions/354070/sql-join-what-is-the-difference-between-where-clause-and-on-clause
 - INNER -> common in both
 - LEFT -> includes all from left table and common
 - RIGHT -> includes all from right table and common
